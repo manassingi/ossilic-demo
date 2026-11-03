@@ -1,0 +1,13 @@
+name: Ossilic Release Check
+on: [pull_request]
+permissions:
+  contents: read
+  pull-requests: write
+jobs:
+  release-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: manassingi/ossilic@main
+        with:
+          machine: robots/rover/machine.json

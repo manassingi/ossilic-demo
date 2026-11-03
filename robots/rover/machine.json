@@ -1,7 +1,7 @@
 {
   "ossilic": "1",
   "name": "rover",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A differential-drive rover that navigates to a goal while avoiding obstacles. The reference machine.",
   "license": "Apache-2.0",
   "authors": [
@@ -23,7 +23,7 @@
         "type": "lidar2d",
         "rays": 24,
         "fov": 3.14159,
-        "range": 4.0,
+        "range": 4,
         "height": 0.1
       },
       {
@@ -60,9 +60,9 @@
         "id": "goto",
         "skill": "nav.goto",
         "params": {
-          "x": 5.0,
-          "y": 5.0,
-          "cruise": 0.6
+          "x": 5,
+          "y": 5,
+          "cruise": 0.2
         }
       },
       {
@@ -118,13 +118,13 @@
           },
           "obstacles": [
             {
-              "x": 2.0,
-              "y": 2.0,
+              "x": 2,
+              "y": 2,
               "r": 0.45
             },
             {
               "x": 3.5,
-              "y": 3.0,
+              "y": 3,
               "r": 0.5
             },
             {
